@@ -1,0 +1,49 @@
+{
+  "name": "Javlon",
+  "profession": "Software Engineer",
+  "age": 32,
+  "residence": "South Korea",
+  "address": "Seoul, South Korea",
+  "language": ["Uzbek", "Korean", "English"],
+  "skills": ["Html", "CSS", "JS", "NodeJs", "Python"],
+  "extra_skills": [
+    "Bootstrap, Materialize",
+    "Styling, Sass",
+    "Django, Flask",
+    "Git Knowledge"
+  ],
+  "work_place": "It Company",
+  "service_desc": "Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. ",
+  "about_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+  "city": "Tashkent",
+  "title": ["flower", "Seedlings", "Gardner", "Old", "New"],
+  "flower_desc": [
+    "What is a Flower?",
+    "What is a Seedling",
+    "What is a Gardner"
+  ],
+  "flower_name": [
+    "Tulip",
+    "Daffodil",
+    "Poppy",
+    "Sunflower",
+    "Bluebell",
+    "Rose",
+    "Snowdrop",
+    "Cherry",
+    "blossom"
+  ],
+  "flower_price": [
+    "15$",
+    "25$",
+    "20$",
+    "12$",
+    "35$",
+    "30$",
+    "22$",
+    "19$",
+    "9$"
+  ],
+  "famous_words": ["World is beautiful with flowers"],
+  "famous_name": ["Steve Jobs"]
+}
