@@ -26,7 +26,7 @@ app.set("view engine", "ejs");
 
 // 4:  Routing code
 app.post("/create-item", (req, res) => {
-  // TODO: code with db hereb
+  res.send("success");
 });
 
 app.get("/author", (req, res) => {
