@@ -85,22 +85,45 @@
 
 // masalani yechimi:
 
-function countLetter(letter, word) {
+// function countLetter(letter, word) {
+//   let count = 0;
+//   if (typeof word === "string" && typeof letter === "string") {
+//     word = word.toLowerCase().split("");
+//     letter = letter.toLowerCase();
+//     for (const ele of word) {
+//       if (letter === ele) {
+//         count++;
+//       }
+//     }
+//     return count;
+//   } else {
+//     return "Please, insert a letter for the first argument and a string for the second argument to get a result";
+//   }
+// }
+
+// const result = countLetter("e", "engineer");
+
+// console.log("result:", result);
+
+// B-TASK:
+
+// Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+// MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
+
+function countDigits(str) {
   let count = 0;
-  if (typeof word === "string" && typeof letter === "string") {
-    word = word.toLowerCase().split("");
-    letter = letter.toLowerCase();
-    for (const ele of word) {
-      if (letter === ele) {
+  if (typeof str === "string") {
+    const arr = str.split("");
+    arr.forEach((ele) => {
+      if (!isNaN(+ele)) {
         count++;
       }
-    }
+    });
     return count;
   } else {
-    return "Please, insert a letter for the first argument and a string for the second argument to get a result";
+    return "Please, enter string!";
   }
 }
 
-const result = countLetter("e", "engineer");
-
+const result = countDigits("ad2a54y79wet0sfgb9");
 console.log("result:", result);
