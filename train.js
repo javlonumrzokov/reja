@@ -110,10 +110,13 @@
 // Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
 // MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 
+//masalaning yechimi:
+
 function countDigits(str) {
   let count = 0;
   if (typeof str === "string") {
-    const arr = str.split("");
+    // const arr = str.split("");
+    const arr = [...str];
     arr.forEach((ele) => {
       if (!isNaN(+ele)) {
         count++;
