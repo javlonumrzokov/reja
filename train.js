@@ -112,21 +112,34 @@
 
 //masalaning yechimi:
 
-function countDigits(str) {
-  let count = 0;
-  if (typeof str === "string") {
-    // const arr = str.split("");
-    const arr = [...str];
-    arr.forEach((ele) => {
-      if (!isNaN(+ele)) {
-        count++;
-      }
-    });
-    return count;
-  } else {
-    return "Please, enter string!";
-  }
-}
+// function countDigits(str) {
+//   let count = 0;
+//   if (typeof str === "string") {
+//     // const arr = str.split("");
+//     const arr = [...str];
+//     arr.forEach((ele) => {
+//       if (!isNaN(+ele)) {
+//         count++;
+//       }
+//     });
+//     return count;
+//   } else {
+//     return "Please, enter string!";
+//   }
+// }
 
-const result = countDigits("ad2a54y79wet0sfgb9");
+// const result = countDigits("ad2a54y79wet0sfgb9");
+// console.log("result:", result);
+
+// C-TASK:
+
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
+const checkContent = (str1, str2) => {
+  const sorted1 = str1.split("").sort().join("");
+  const sorted2 = str2.split("").sort().join("");
+  return sorted1 === sorted2 ? true : false;
+};
+const result = checkContent("mitgroup", "gmtiprou");
 console.log("result:", result);
