@@ -226,18 +226,88 @@
 // Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
 // MASALAN: getReverse("hello") return true return qiladi
 
-const findDoublers = (str) => {
-  return [...str].some((ele, i, arr) => {
-    return arr.lastIndexOf(ele) !== i;
-  });
-  // for (let i = 0; i <= str.length; i++) {
-  //   for (let j = i + 1; j < str.length; j++) {
-  //     if (str[i] === str[j]) {
-  //       return true;
-  //     }
-  //   }
-  // }
-  // return false;
+// const findDoublers = (str) => {
+//   return [...str].some((ele, i, arr) => {
+//     return arr.lastIndexOf(ele) !== i;
+//   });
+//   // for (let i = 0; i <= str.length; i++) {
+//   //   for (let j = i + 1; j < str.length; j++) {
+//   //     if (str[i] === str[j]) {
+//   //       return true;
+//   //     }
+//   //   }
+//   // }
+//   // return false;
+// };
+// const result = findDoublers("halol");
+// console.log("result:", result);
+
+// G-TASK:
+
+// Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+
+//Compiled languages: Java, GoLang, C, C++, C#, Rust => Compiling & Running
+
+// Interpreted Languages: NodeJS, Python, PHP, Ruby  => Running
+
+// Primitive types: string, number, boolean, null, undefined, symbol
+//Object types: objects, arrays
+
+// TypeScript
+
+// let box: string = "hello";
+// box = "100";
+
+// let counter: number = 100;
+// let stage: number | string = 100;
+// stage = "hi";
+// //object:
+
+// //interface
+
+// interface Person {
+//   name: String,
+//   age: numberlike,
+//   nationality: string
+// }
+
+// let person: Person = {
+//   name: 'Martin',
+//   age: 30,
+//   nationality: 'Australian'
+// }
+// //array
+// let skills: (number | string)[];
+// skills = ["hi", "how", "when", 100];
+
+//Classes:
+
+// class Person {
+//   age: numberlike;
+//   firstName: String;
+//   lastName: String;
+
+//   constructor(age:number, firstName: string, lastName: string) {
+//     this.age = age;
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//   }
+// }
+
+// const person1 = new Person(30, "John", "Duran")
+
+const getHighestIndex = (arr) => {
+  let largest = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    largest = arr[i] >= largest ? arr[i] : largest;
+  }
+  // const newArr = [...arr];
+  // const largest = newArr.sort((a, b) => b - a)[0];
+
+  return arr.indexOf(largest);
 };
-const result = findDoublers("hello");
+
+const result = getHighestIndex([5, 21, 12, 21, 8]);
 console.log("result:", result);
