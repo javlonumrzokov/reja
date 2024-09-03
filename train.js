@@ -242,11 +242,6 @@
 // const result = findDoublers("halol");
 // console.log("result:", result);
 
-// G-TASK:
-
-// Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
-// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
-
 //Compiled languages: Java, GoLang, C, C++, C#, Rust => Compiling & Running
 
 // Interpreted Languages: NodeJS, Python, PHP, Ruby  => Running
@@ -295,7 +290,12 @@
 //   }
 // }
 
-// const person1 = new Person(30, "John", "Duran")
+// const person1 = new Person(30, "John", "Duran");
+
+// G-TASK:
+
+// Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+// MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 
 const getHighestIndex = (arr) => {
   let largest = 0;
