@@ -1,0 +1,21 @@
+version: "1.1"
+
+services:
+  node:
+    container_name: reja
+    restart: always
+    image: javlon1992/reja-image
+    ports:
+      - 3003:7010
+    volumes:
+      - ./:/usr/src/app
+    working_dir: /usr/src/app
+
+    networks:
+      - reja_network
+
+    command: bash -c "npm install && npm run dev"
+
+networks:
+  reja_network:
+    driver: bridge
